@@ -42,7 +42,7 @@ def movie_details(request,pk):
         elif request.method=='DELETE': 
                 movie=Movie.objects.get(pk=pk) 
                 movie.delete() 
-                return Response({'msg':"Data deleted successfully"}, status=status.HTTP_204_NO_CONTENT)
+                return Response({'msg':"data deleted Successfully"}, status=status.HTTP_204_NO_CONTENT)
     else:
         res = {'msg': 'id not present in Database'}
         return Response(res)
