@@ -44,6 +44,6 @@ def movie_details(request,pk):
                 movie.delete() 
                 return Response({'msg':"data deleted Successfully"}, status=status.HTTP_204_NO_CONTENT)
     else:
-        res = {'msg': 'id not present in Database'}
+        res = {'msg': 'Id Not Present In Database'}
         return Response(res)
      
